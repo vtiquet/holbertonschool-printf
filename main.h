@@ -11,7 +11,7 @@ typedef struct handler
 	int (*handler)(va_list args);
 } handler_t;
 
-int _putchar(char c)
+int _putchar(char c);
 int _printf(const char *format, ...);
 int _printc(va_list args);
 int _prints(va_list args);
