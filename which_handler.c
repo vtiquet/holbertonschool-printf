@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * which_handler - a function that use the right specifiers.
- * @format:  character to print.
- * Return:  the right specifiers.
- */
+* which_handler - a function that use the right specifiers.
+* @format:  character to print.
+* Return:  the right specifiers.
+*/
 int (*which_handler(const char *format, int i2))(va_list)
 {
-    format_handler_t handlers[] = {
+	handler_t handlers[] = {
 		{'c', _printc},
 		{'s', _prints},
 		{'%', _printp},
@@ -15,7 +15,7 @@ int (*which_handler(const char *format, int i2))(va_list)
 	};
 	int i1 = 0;
 
-    while (handlers[i1].specifier)
+	while (handlers[i1].specifier)
 	{
 		if (format[i2] == handlers[i1].specifier)
 		{
