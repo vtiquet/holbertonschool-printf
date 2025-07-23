@@ -12,7 +12,7 @@ int (*which_handler(const char *format, int i2))(va_list)
 		{'c', _printc},
 		{'s', _prints},
 		{'%', _printp},
-		{'d', _printd},
+		{'d', _printi},
 		{'i', _printi},
 		{'\0', NULL}
 	};
