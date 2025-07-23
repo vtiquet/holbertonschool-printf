@@ -3,6 +3,7 @@
 /**
 * which_handler - a function that use the right specifiers.
 * @format:  character to print.
+* @i2: index of the specifier.
 * Return:  the right specifiers.
 */
 int (*which_handler(const char *format, int i2))(va_list)
