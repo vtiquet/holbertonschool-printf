@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 	int i = 0, count = 0;
 	int (*handler_func)(va_list);
 
-	if (!format || (format[0] == '%' && !format[1]))
+	if (format == NULL)
 		return (-1);
 
 	va_start(args, format);
