@@ -17,6 +17,8 @@ int _printf(const char *format, ...);
 int _printc(va_list args);
 int _prints(va_list args);
 int _printp(va_list args);
+int _printd(va_list args);
+int _printi(va_list args);
 
 int (*which_handler(const char *format, int i2))(va_list);
 
